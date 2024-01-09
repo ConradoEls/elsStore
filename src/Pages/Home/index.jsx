@@ -1,9 +1,7 @@
-function Home() {
-  return (
-    <>
-      <h1 className="text-3xl font-bold underline">Home</h1>
-    </>
-  );
-}
+import Layout from "../../Components/Layout";
+
+const Home = () => {
+  return <Layout>Home</Layout>;
+};
 
 export default Home;

@@ -7,7 +7,7 @@ import MyOrder from "../MyOrder";
 import MyOrders from "../MyOrders";
 import NotFound from "../NotFound";
 import SingIn from "../SingIn";
-import Navbar from "../Components/Navbar";
+import Navbar from "../../Components/Navbar";
 
 const AppRoutes = () => {
   let routes = useRoutes([
