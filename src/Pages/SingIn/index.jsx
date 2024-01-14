@@ -1,9 +1,7 @@
+import Layout from "../../Components/Layout";
+
 function SingIn() {
-  return (
-    <>
-      <h1 className="text-3xl font-bold underline">SingIn</h1>
-    </>
-  );
+  return <Layout>NotFound</Layout>;
 }
 
 export default SingIn;

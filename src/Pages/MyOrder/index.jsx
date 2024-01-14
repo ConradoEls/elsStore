@@ -1,9 +1,7 @@
+import Layout from "../../Components/Layout";
+
 function MyOrder() {
-  return (
-    <>
-      <h1 className="text-3xl font-bold underline">MyOrder</h1>
-    </>
-  );
+  return <Layout>MyOrder</Layout>;
 }
 
 export default MyOrder;
