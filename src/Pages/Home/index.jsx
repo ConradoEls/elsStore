@@ -13,7 +13,7 @@ const Home = () => {
   }, []);
   return (
     <Layout>
-      <div className="grid gap-5 grid-cols-4 w-full max-w-screen-xl ">
+      <div className="grid gap-5 grid-cols-4 w-full max-w-screen-xl ml-16">
         {items?.map((item) => {
           return <Card key={item.id} data={item} />;
         })}

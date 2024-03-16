@@ -18,9 +18,9 @@ const Card = ({ data }) => {
           className="rounded-lg w-full h-full object-cover"
         />
         <div
-          className="absolute top-0 right-0 flex justify-center items-center bg-white w-6 h-6 rounded-full m-2 p-1"
+          className="absolute top-0 right-0 flex justify-center items-center bg-white w-6 h-6 rounded-full m-3 p-1"
           onClick={HandleClick}
-        >+
+        ><div className="absolute bottom-0.5">+</div>
         </div>
       </figure>
       <p className="flex justify-between">
