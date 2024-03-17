@@ -7,7 +7,7 @@ const ProductDetail = () => {
     <aside className={`${context.isOpen ? "flex" : "hidden"} flex-col fixed right-0 top-[68px] border border-black rounded-l-lg bg-white w-[360px] h-[calc(100vh-80px)]`}>
       <div className="flex justify-between items-center p-5">
         <h2 className="font-medium text-xl">Detail</h2>
-        <div className="rounded-full bg-[#e2e1e1]" onClick={context.close}>
+        <div className="rounded-full cursor-pointer bg-[#e2e1e1]" onClick={context.close}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
