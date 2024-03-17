@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 import { useContext } from "react";
-import { CartContext } from "../../Context";
+import { Context } from "../../Context";
 
 const Navbar = () => {
-  const context = useContext(CartContext);
+  const context = useContext(Context);
   const activeStyle = "underline underline-offset-4";
   return (
     <nav className="flex bg-white justify-between items-center fixed z-10 top-0 w-full py-5 px-8 text-sm font-light ">
