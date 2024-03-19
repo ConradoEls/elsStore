@@ -12,9 +12,11 @@ export const ContextProvider = ({ children }) => {
   const close = () => setIsOpen(false);
 
   //Data Product Detail
+  const [productDetail, setProductDetail] = useState({});
+
   
   return (
-    <Context.Provider value={{ count, setCount,isOpen, setIsOpen, open, close }}>
+    <Context.Provider value={{ count, setCount,isOpen, setIsOpen, open, close, productDetail, setProductDetail }}>
       {children}
     </Context.Provider>
   );

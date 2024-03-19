@@ -3,9 +3,16 @@ import { Context } from "../../Context";
 
 const Card = ({ data }) => {
   const context = useContext(Context);
-  const HandleClick = () => {
+
+  const HandleClickDetail = (productDetail) => {
+    context.open();
+    context.setProductDetail(productDetail);
+  };
+
+  const HandleClickCart = () => {
     context.setCount(context.count + 1);
   };
+
   return (
     <div className="bg-white cursor-pointer w-56 h-60 rounded-lg">
       <figure className="relative mb-2 w-full h-4/5">
@@ -16,11 +23,11 @@ const Card = ({ data }) => {
           src={data.image}
           alt="headphones"
           className="rounded-lg w-full h-full object-cover"
-          onClick={()=> context.open()}
+          onClick={() => HandleClickDetail(data)}
         />
         <div
           className="absolute top-0 right-0 flex justify-center items-center bg-white w-6 h-6 rounded-full m-3 p-1"
-          onClick={HandleClick}
+          onClick={HandleClickCart}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +45,10 @@ const Card = ({ data }) => {
           </svg>
         </div>
       </figure>
-      <p className="flex justify-between" onClick={()=> context.open()}>
+      <p
+        className="flex justify-between"
+        onClick={() => HandleClickDetail(data)}
+      >
         <span className="text-sm font-light truncate mr-2">{data.title}</span>
         <span className="text-lg font-medium">${data.price}</span>
       </p>
